@@ -1,6 +1,9 @@
 public class Dog extends Animal {
+    public Dog() {
+    } // defalut 생성자
+
     public void sleep() {
-        System.out.println(this.name+" zzz");
+        System.out.println(this.name + " zzz");
     }
     public static void main(String[] args) {
         Dog dog = new Dog();
