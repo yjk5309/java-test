@@ -1,4 +1,4 @@
-public class Lion extends Animal implements Predator, Barkable {
+public class Lion extends Predator implements Barkable {
     public String getFood() {
         return "banana";
     }
