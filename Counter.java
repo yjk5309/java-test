@@ -1,16 +1,29 @@
-class Updater {
-    public void update(Counter counter) {
-        counter.count++;
-    }
-}
+// public class Counter  {
+//     static int count = 0;
+//     Counter() {
+//         this.count++;
+//         System.out.println(this.count);
+//     }
 
-public class Counter {
-    int count = 0;
-    public static void main(String[] args) {
-        Counter myCounter = new Counter();
-        System.out.println("before update:"+myCounter.count);
-        Updater myUpdater = new Updater();
-        myUpdater.update(myCounter);
-        System.out.println("after update:"+myCounter.count);
+//     public static void main(String[] args) {
+//         Counter c1 = new Counter();
+//         Counter c2 = new Counter();
+//     }
+// } // static 변수
+public class Counter  {
+    static int count = 0;
+    Counter() {
+        this.count++;
     }
-}
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+
+        System.out.println(Counter.getCount());
+    }
+} // static method
